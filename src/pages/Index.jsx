@@ -59,11 +59,9 @@ const Index = () => {
               <div key={index} className="mb-4">
                 <div className="text-sm text-gray-500">
                   {message.sender} - {message.timestamp.toLocaleTimeString()}
-                  {message.sender === "user" && (
-                    <Button variant="link" size="sm" onClick={() => handleEdit(index)} className="ml-2">
-                      Edit
-                    </Button>
-                  )}
+                  <Button variant="link" size="sm" onClick={() => handleEdit(index)} className="ml-2">
+                    Edit
+                  </Button>
                 </div>
                 <div className="text-lg">{message.text}</div>
               </div>
